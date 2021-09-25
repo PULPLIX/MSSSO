@@ -1,0 +1,33 @@
+{
+  "Sample": {
+    "Title": "A Node.js & Express web app authenticating users against Azure AD with MSAL Node",
+    "Level": 100,
+    "Client": "Node.js & Express web app"
+  },
+  "AppRegistrations": [
+    {
+      "x-ms-id": "webApp",
+      "x-ms-name": "ms-identity-node",
+      "x-ms-version": "2.0",
+      "replyUrlsWithType": [
+        {
+          "url": "http://localhost:3000/redirect",
+          "type": "Web"
+        }
+      ],
+      "oauth2AllowImplicitFlow": false,
+      "oauth2AllowIdTokenImplicitFlow": false,
+      "codeConfigurations": [
+        {
+          "settingFile": "/index.js",
+          "replaceTokens": {
+            "appId": "e90d57b2-8a31-4626-ad76-5d239204b400",
+            "tenantId": "64dde762-4069-47e9-80d6-4bd9a46b46d1",
+            "clientSecret": "Fmu7Q~2Rb8LiyAP9OhfjFDagUIZKvn2NoIJlM",
+            "authorityEndpointHost": "https://login.microsoftonline.com/64dde762-4069-47e9-80d6-4bd9a46b46d1"
+          }
+        }
+      ]
+    }
+  ]
+}
